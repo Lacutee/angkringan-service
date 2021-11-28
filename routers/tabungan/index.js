@@ -8,5 +8,4 @@ router.get('/', TabunganRouter.getTabungan);
 
 router.post('/', TabunganRouter.postTabungan);
 
-
-
+module.exports = router;
