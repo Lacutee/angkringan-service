@@ -16,7 +16,6 @@ mongoose.connect(uri, {
 });//connect to database
 
 const connection = mongoose.connection; 
-console.log(connection)
 connection.once('open', () =>{
   console.log("Mongodb database terkoneksi ");
 });
