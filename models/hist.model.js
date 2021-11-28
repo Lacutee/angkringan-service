@@ -44,6 +44,6 @@ const HistSchema = new Schema({
     timestamps: true
 });
 
-const Hist = mongoose.model('Hist', HistSchema);
+const HistoryData = mongoose.model('HistoryData', HistSchema);
 
-module.exports = Hist;
+module.exports = HistoryData;
