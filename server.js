@@ -31,7 +31,7 @@ app.use('/tabungan', require('./routers/tabungan/index'));
 app.use('/hist', require('./routers/hist/index'))
 
 // start server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const server = app.listen(port, function () {
     console.log('Server listening on port ' + port);
 });
