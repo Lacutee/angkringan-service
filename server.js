@@ -26,13 +26,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // api routes
-app.use('/users', require('./routes/userAuthRouter'));
-app.use('/attandence', require('./routes/goeAuthRouter'))
-app.use('/home', require('./routes/users'));
-app.use('/forget', require('./routes/userForgetPassRouter'))
-
-// global error handler
-app.use(errorHandler);
+app.use('/auth', require('./routers/auth/index'));
+app.use('/menu', require('./routers/menu/index'))
+app.use('/tabungan', require('./routers/tabungan/index'));
+app.use('/hist', require('./routers/hist/index'))
 
 // start server
 const port = process.env.PORT || 3000;
