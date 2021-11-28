@@ -31,6 +31,6 @@ module.exports = {
 
         await NewHist.save()
                         .then(()=>{res.json('User has been added')})
-                        .catch(err =>{next(err)})
+                        .catch(err =>{res.send(err)})
     }
 }
