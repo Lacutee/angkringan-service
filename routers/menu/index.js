@@ -12,5 +12,6 @@ router.get('/', menuRouter.getAllMenu);
 
 router.post('/', menuRouter.postMenu);
 
+module.exports = router;
 
 
